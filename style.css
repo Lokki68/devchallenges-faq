@@ -1,0 +1,86 @@
+:root {
+
+  --font-family: 'Inter', sans-serif;
+
+  --main-blue: #4E80EE;
+  --main-black: #030616;
+  --main-gray: #D2D5DA;
+  --mid-white: #F8FAFC;
+  --main-white: #FFFFFF;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family : var(--font-family);
+  color: var(--main-black);
+  background-color: var(--main-white);
+  height: 100vh;
+  background: var(--mid-white);
+}
+
+header {
+  background: var(--main-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  gap: 50px;
+}
+
+.separation {
+  width: 80%;
+  height: 1px;
+  background: var(--main-gray);
+}
+
+section {
+  width: 80%;
+  line-height: 1.5;
+}
+
+section h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+section p {
+  margin: 20px 0;
+}
+
+section a {
+  text-decoration: none;
+  color: var(--main-blue);
+}
+
+section ul, section ol {
+  list-style-position: inside;
+
+  li {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    width: 60%;
+  }
+}
